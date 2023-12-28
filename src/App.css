@@ -1,0 +1,52 @@
+body {
+    width: 100vw;
+    height: 100vh;
+
+    padding: 0 10px;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bebas Neue';
+}
+
+.gameName {
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.content {
+    width: 100%;
+}
+
+.user {
+    width: 35px;
+    height: 35px;
+
+    background-color: #000;
+}
+
+.road {
+    width: 100%;
+    height: 3px;
+
+    background-color: #323232;
+}
+
+.jump {
+    animation: 'jumpAnim' linear 1;
+}
+
+@keyframes jumpAnim {
+    0%,
+    50% {
+        margin-bottom: 100px;
+    }
+    100% {
+        margin-bottom: 0;
+    }
+}
